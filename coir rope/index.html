@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COKO ROPE - Natural Coir Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-switch">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">🌴</div>
+                <span class="logo-text">COKO <strong>ROPE</strong></span>
+            </a>
+            
+            <!-- Mobile Preview Toggle -->
+            <div class="mobile-preview-toggle" id="mobilePreviewToggle">
+                <i class="fas fa-mobile-alt"></i>
+                <span class="preview-label">Preview</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-text">Home</span>
+                    <span class="nav-preview">Hero section with animations</span>
+                </a></li>
+                
+                <li><a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span class="nav-text">About Coir</span>
+                    <span class="nav-preview">Industry info & statistics</span>
+                </a></li>
+                
+                <li><a href="#processing" class="nav-link">
+                    <i class="fas fa-industry"></i>
+                    <span class="nav-text">Processing</span>
+                    <span class="nav-preview">4-step production process</span>
+                </a></li>
+                
+                <li><a href="#types" class="nav-link">
+                    <i class="fas fa-cubes"></i>
+                    <span class="nav-text">Types</span>
+                    <span class="nav-preview">4 product categories</span>
+                </a></li>
+                
+                <li><a href="#quality" class="nav-link">
+                    <i class="fas fa-award"></i>
+                    <span class="nav-text">Quality</span>
+                    <span class="nav-preview">Standards & certifications</span>
+                </a></li>
+                
+                <li><a href="#founder" class="nav-link">
+                    <i class="fas fa-user-tie"></i>
+                    <span class="nav-text">Founder</span>
+                    <span class="nav-preview">Story & achievements</span>
+                </a></li>
+                
+                <li><a href="#contact" class="nav-link contact-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span class="nav-text">Contact</span>
+                    <span class="nav-preview">Get in touch</span>
+                </a></li>
+            </ul>
+            
+            <!-- Device Preview Overlay -->
+            <div class="device-preview-overlay" id="devicePreviewOverlay">
+                <div class="preview-content">
+                    <div class="preview-header">
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile Preview</h3>
+                        <button class="close-preview" id="closePreview">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="device-options">
+                        <div class="device-option active" data-device="mobile">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile</span>
+                        </div>
+                        <div class="device-option" data-device="tablet">
+                            <i class="fas fa-tablet-alt"></i>
+                            <span>Tablet</span>
+                        </div>
+                        <div class="device-option" data-device="desktop">
+                            <i class="fas fa-desktop"></i>
+                            <span>Desktop</span>
+                        </div>
+                        <div class="device-option" data-device="ios">
+                            <i class="fab fa-apple"></i>
+                            <span>iOS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-frame" id="previewFrame">
+                        <div class="device-frame device-mobile">
+                            <div class="device-screen">
+                                <iframe src="index.html" frameborder="0"></iframe>
+                            </div>
+                            <div class="device-home-button"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-controls">
+                        <div class="control-group">
+                            <label><i class="fas fa-expand-alt"></i> Zoom:</label>
+                            <div class="zoom-controls">
+                                <button class="zoom-btn" data-action="zoom-out">
+                                    <i class="fas fa-search-minus"></i>
+                                </button>
+                                <span class="zoom-level">100%</span>
+                                <button class="zoom-btn" data-action="zoom-in">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label><i class="fas fa-sun"></i> Theme:</label>
+                            <div class="theme-controls">
+                                <button class="theme-btn" data-theme="light">Light</button>
+                                <button class="theme-btn" data-theme="dark">Dark</button>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label><i class="fas fa-rotate"></i> Rotate:</label>
+                            <button class="rotate-btn">
+                                <i class="fas fa-undo"></i> Rotate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="coconut animate-float"></div>
+            <div class="rope animate-rotate"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-text">
+                <span class="text-green">Natural</span> 
+                <span class="text-brown">Coir</span> 
+                <span class="text-green">Products</span>
+            </h1>
+            <p class="hero-subtitle animate-fade">
+                Sustainable. Durable. Eco-friendly. Traditional craftsmanship meets modern sustainability
+            </p>
+            <div class="hero-buttons">
+                <a href="#types" class="btn btn-primary animate-btn">
+                    <span>Explore Products</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-secondary animate-btn">
+                    <span>Learn More</span>
+                    <i class="fas fa-book"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About <span class="text-brown">Coir</span> Industry</h2>
+            <p class="section-subtitle">Sustainable fibers for a greener world</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-image">
+                        <img src="https://tiimg.tistatic.com/fp/1/004/497/coir-fiber-525.jpg" alt="Coir fibers close-up" loading="lazy">
+                        <div class="image-overlay">
+                            <span>Coconut Fiber</span>
+                        </div>
+                    </div>
+                    
+                    <h3><i class="fas fa-leaf"></i> What is Coir?</h3>
+                    <p>Coir, also known as coconut fiber, is a natural fiber extracted from the husk of coconuts. It's the fibrous material found between the hard, internal shell and the outer coat of a coconut.</p>
+                    <p>For centuries, coir has been used to make products such as floor mats, doormats, brushes, mattresses, and ropes due to its durability and water-resistant properties.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-globe-asia"></i>
+                            <h4>Global Impact</h4>
+                            <p>Supports millions of livelihoods worldwide with sustainable practices</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-recycle"></i>
+                            <h4>100% Biodegradable</h4>
+                            <p>Completely natural material that returns to earth without harming environment</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-tree"></i>
+                            <h4>Renewable Resource</h4>
+                            <p>Made from coconut husk, a byproduct that gets new life as durable products</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-box">
+                    <h3><i class="fas fa-chart-line"></i> Industry Statistics</h3>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="12">0</div>
+                            <div class="stat-label">Million Tons Annual Production</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-label">Countries Using Coir Products</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">Million+ Livelihoods Supported</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processing Section -->
+    <section id="processing" class="section processing-section">
+        <div class="container">
+            <h2 class="section-title">Coir <span class="text-brown">Processing</span> Methods</h2>
+            <p class="section-subtitle">Traditional craftsmanship meets modern sustainability</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <div class="process-image">
+                            <img src="https://c8.alamy.com/comp/JG465A/coconut-husk-retting-factory-JG465A.jpg" alt="Coconut husks soaking in water for retting" loading="lazy">
+                        </div>
+                        <h3><i class="fas fa-water"></i> Retting</h3>
+                        <p>Coconut husks are soaked in water for 6-12 months to soften the fibers through natural fermentation.</p>
+                        <div class="timeline-details">
+                            <span><i class="fas fa-clock"></i> 6-12 months</span>
+                            <span><i class="fas fa-tint"></i> Natural water retting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <div class="process-image">
+                            <img src="https://www.dsource.in/sites/default/files/gallery/17791/6.jpg" alt="Fiber extraction from coconut husk" loading="lazy">
+                        </div>
+                        <h3><i class="fas fa-hammer"></i> Fiber Extraction</h3>
+                        <p>After retting, fibers are separated from the husk using traditional beating or mechanical decorticators.</p>
+                        <div class="timeline-details">
+                            <span><i class="fas fa-hands"></i> Manual beating</span>
+                            <span><i class="fas fa-cogs"></i> Mechanical extraction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <div class="process-image">
+                            <img src="https://www.shutterstock.com/image-photo/coir-thread-making-machine-factory-600nw-2481231619.jpg" alt="Spinning coir fibers into yarn" loading="lazy">
+                        </div>
+                        <h3><i class="fas fa-spinner"></i> Spinning</h3>
+                        <p>Extracted fibers are spun into yarn using traditional spinning wheels or modern machines.</p>
+                        <div class="timeline-details">
+                            <span><i class="fas fa-hand-sparkles"></i> Traditional spinning</span>
+                            <span><i class="fas fa-industry"></i> Machine spinning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <div class="process-image">
+                            <img src="https://www.dsource.in/sites/default/files/gallery/17790/03.jpg" alt="Braiding coir rope by hand" loading="lazy">
+                        </div>
+                        <h3><i class="fas fa-link"></i> Rope Making</h3>
+                        <p>Spun yarn is twisted and braided into ropes of various thicknesses using hand or machine techniques.</p>
+                        <div class="timeline-details">
+                            <span><i class="fas fa-hands-helping"></i> Hand braiding</span>
+                            <span><i class="fas fa-cogs"></i> Machine braiding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section id="types" class="section types-section">
+        <div class="container">
+            <h2 class="section-title">Types of <span class="text-brown">Coir</span></h2>
+            <p class="section-subtitle">Discover our range of premium natural coir products</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/brown-coir.jpg" alt="Brown coir fibers and products" loading="lazy">
+                        <div class="product-overlay">
+                            <h4>Brown Coir</h4>
+                            <p>Strong and durable</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><i class="fas fa-tree"></i> Brown Coir</h3>
+                        <p>Harvested from fully matured coconuts. Strong, thick, and highly resistant to abrasion.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-weight-hanging"></i> High Strength</span>
+                            <span><i class="fas fa-tint"></i> Water Resistant</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Floor Mats</span>
+                            <span class="tag">Upholstery</span>
+                            <span class="tag">Brushes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/white-coir.jpg" alt="White coir fibers and products" loading="lazy">
+                        <div class="product-overlay">
+                            <h4>White Coir</h4>
+                            <p>Fine and flexible</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><i class="fas fa-feather-alt"></i> White Coir</h3>
+                        <p>Extracted from immature coconuts. Softer, finer, and more flexible than brown coir.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-soft"></i> Softer Texture</span>
+                            <span><i class="fas fa-ruler-combined"></i> Finer Fibers</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Mattresses</span>
+                            <span class="tag">Rope</span>
+                            <span class="tag">Twine</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/coir-yarn.jpg" alt="Coir yarn spools and weaving" loading="lazy">
+                        <div class="product-overlay">
+                            <h4>Coir Yarn</h4>
+                            <p>Versatile and strong</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><i class="fas fa-spinner"></i> Coir Yarn</h3>
+                        <p>Spun from coir fibers into various thicknesses for weaving and textile applications.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-ruler-vertical"></i> Various Thickness</span>
+                            <span><i class="fas fa-thread"></i> Weaving Grade</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Weaving</span>
+                            <span class="tag">Textiles</span>
+                            <span class="tag">Crafts</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/coir-rope.jpg" alt="Coir rope products and applications" loading="lazy">
+                        <div class="product-overlay">
+                            <h4>Coir Rope</h4>
+                            <p>Durable and natural</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3><i class="fas fa-link"></i> Coir Rope</h3>
+                        <p>Hand-braided or machine-made ropes in various diameters for different applications.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-anchor"></i> Marine Grade</span>
+                            <span><i class="fas fa-wind"></i> Weather Resistant</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Marine</span>
+                            <span class="tag">Gardening</span>
+                            <span class="tag">Construction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <h3 class="sub-title">Coir Product Gallery</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5zYfBKRxO8tK8x1F5paW0wFjfZBLYzQf4Q&s" alt="Coir floor mat" loading="lazy">
+                        <div class="gallery-caption">Floor Mats</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_g1OPMJpo7qpK5PYeeFvvUIBzN42xw1Al6Q&s" alt="Coir brush" loading="lazy">
+                        <div class="gallery-caption">Brushes</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuTQLMy6z46gpN226l_PS7__MDwTaiC_Snjw&s" alt="Coir mattress" loading="lazy">
+                        <div class="gallery-caption">Mattresses</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6oA4AlH2KsZG77Kjt4axEUa9KJvep1ESxvg&s" alt="Coir geotextiles" loading="lazy">
+                        <div class="gallery-caption">Geotextiles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section id="quality" class="section quality-section">
+        <div class="container">
+            <h2 class="section-title">Coir <span class="text-brown">Quality</span> Standards</h2>
+            <p class="section-subtitle">Excellence measured in strength, durability, and sustainability</p>
+            
+            <div class="quality-header">
+                <div class="quality-intro">
+                    <div class="quality-image">
+                        <img src="https://www.saicocopeat.com/images/quality-assurance.jpg" alt="Quality testing of coir products" loading="lazy">
+                    </div>
+                    <div class="quality-text">
+                        <h3><i class="fas fa-check-circle"></i> Our Quality Commitment</h3>
+                        <p>Every batch of coir undergoes rigorous testing to ensure it meets international quality standards. From fiber extraction to final product, we maintain strict quality control at every stage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quality-cards">
+                <div class="quality-card">
+                    <div class="quality-header">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Tensile Strength</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="92"></div>
+                        </div>
+                        <span class="progress-value">92%</span>
+                    </div>
+                    <p>Achieving 92% of maximum tensile strength, exceeding industry standards</p>
+                    <div class="quality-details">
+                        <div>Breaking Load: <strong>120-150 N/tex</strong></div>
+                        <div>Elongation: <strong>30-40%</strong></div>
+                    </div>
+                </div>
+                
+                <div class="quality-card">
+                    <div class="quality-header">
+                        <i class="fas fa-tint"></i>
+                        <h3>Moisture Resistance</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="88"></div>
+                        </div>
+                        <span class="progress-value">88%</span>
+                    </div>
+                    <p>Natural lignin content provides excellent water resistance while maintaining breathability</p>
+                    <div class="quality-details">
+                        <div>Water Absorption: <strong>15-20%</strong></div>
+                        <div>Drying Time: <strong>4-6 hours</strong></div>
+                    </div>
+                </div>
+                
+                <div class="quality-card">
+                    <div class="quality-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Durability</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95"></div>
+                        </div>
+                        <span class="progress-value">95%</span>
+                    </div>
+                    <p>5-7 year lifespan in outdoor conditions, resistant to UV and wear</p>
+                    <div class="quality-details">
+                        <div>Lifespan: <strong>5-7 years</strong></div>
+                        <div>UV Resistance: <strong>Excellent</strong></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications">
+                <h3><i class="fas fa-certificate"></i> Certifications & Standards</h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <i class="fas fa-award"></i>
+                        <h4>ISO 9001:2015</h4>
+                        <p>Quality Management System</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Organic Certified</h4>
+                        <p>100% natural and chemical-free</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Eco-Friendly</h4>
+                        <p>Sustainable production</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4>Fair Trade</h4>
+                        <p>Ethical sourcing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="section founder-section">
+        <div class="container">
+            <h2 class="section-title">Founder <span class="text-brown">Profile</span></h2>
+            <p class="section-subtitle">Visionary leadership driving sustainable innovation</p>
+            
+            <div class="founder-content">
+                <div class="founder-image">
+                    <div class="image-frame">
+                        <img src="images/founder.jpg" alt="Rajesh Kumar - Founder of COKO ROPE" loading="lazy">
+                        <div class="frame-decoration"></div>
+                    </div>
+                    <div class="founder-quote-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCKBQ5uHf-3niFxw0nc_WJLdVYV2R6c0NSw&s" alt="COKO ROPE factory" loading="lazy">
+                        <div class="quote-overlay">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Sustainable production since 1995</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="founder-info">
+                    <h3><span class="text-brown">Rajesh</span> <span class="text-green">Kumar</span></h3>
+                    <p class="founder-title">Founder & Visionary Leader</p>
+                    
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Every coconut husk tells a story of sustainability, and every rope we weave connects communities to nature."</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    
+                    <div class="founder-milestones">
+                        <div class="milestone">
+                            <div class="year">1995</div>
+                            <div class="milestone-content">
+                                <h4>Founded COKO ROPE</h4>
+                                <p>Started with 5 employees and a vision for sustainable coir products</p>
+                              
+                            </div>
+                        </div>
+                        
+                        <div class="milestone">
+                            <div class="year">2005</div>
+                            <div class="milestone-content">
+                                <h4>Innovation Award</h4>
+                                <p>Developed eco-friendly retting process reducing water consumption by 40%</p>
+                               
+                            </div>
+                        </div>
+                        
+                        <div class="milestone">
+                            <div class="year">2020</div>
+                            <div class="milestone-content">
+                                <h4>Global Recognition</h4>
+                                <p>Exported to 20+ countries, received Green Business Award</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌴</span>
+                        <div>
+                            <h3>COKO ROPE</h3>
+                            <p>Natural Coir Products</p>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">Sustainable solutions for a greener tomorrow</p>
+                    <div class="footer-image">
+                        <img src="https://tropicoco.vn/wp-content/uploads/2021/08/Planter-liners-made-from-coir-is-one-of-the-best-products-for-gardeners.png" alt="Coir products in use" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4><i class="fas fa-link"></i> Quick Links</h4>
+                        <ul>
+                            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#about"><i class="fas fa-chevron-right"></i> About Coir</a></li>
+                            <li><a href="#processing"><i class="fas fa-chevron-right"></i> Processing</a></li>
+                            <li><a href="#types"><i class="fas fa-chevron-right"></i> Types</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4><i class="fas fa-cog"></i> Resources</h4>
+                        <ul>
+                            <li><a href="#quality"><i class="fas fa-chevron-right"></i> Quality Standards</a></li>
+                            <li><a href="#founder"><i class="fas fa-chevron-right"></i> Founder Story</a></li>
+                            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                            <li><a href="#sustainability"><i class="fas fa-chevron-right"></i> Sustainability</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4><i class="fas fa-envelope"></i> Contact</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> info@cokorope.com</p>
+                            <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                            <p><i class="fas fa-map-marker-alt"></i> T.Pudhupalayam,Thevor(PO),Salem(DT)</p>
+                        </div>
+                       
+                        <div class="social-links">
+                            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-btn"><i class="fab fa-snapchat"></i></a>
+                            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-btn"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 COKO ROPE. All rights reserved. | Sustainable since 1995</p>
+                            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
